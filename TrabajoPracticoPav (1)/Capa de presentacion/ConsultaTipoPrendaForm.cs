@@ -32,6 +32,7 @@ namespace TrabajoPractico
         {
             
             PrincipalForm volverPrincipal = new PrincipalForm(usu);
+            //holasaaa
             volverPrincipal.Show();
             this.Hide();
         }
