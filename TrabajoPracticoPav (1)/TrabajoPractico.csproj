@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FB3F72D1-63E9-4FB6-87EB-F023F4ECC31B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TrabajoPractico</RootNamespace>
+    <AssemblyName>TrabajoPractico</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base de datos\BD.cs" />
+    <Compile Include="Capa de negocio\PrendaServicios.cs" />
+    <Compile Include="Capa de negocio\TipoDocServicios.cs" />
+    <Compile Include="Capa de negocio\TipoPrendaServicios.cs" />
+    <Compile Include="Capa de negocio\TransaccionServicios.cs" />
+    <Compile Include="Capa de negocio\UsuarioServicios.cs" />
+    <Compile Include="Capa de presentacion\AltaTipoDocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\AltaTipoDocForm.Designer.cs">
+      <DependentUpon>AltaTipoDocForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\AltaTipoPrendaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\AltaTipoPrendaForm.Designer.cs">
+      <DependentUpon>AltaTipoPrendaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\AltaPrenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\AltaPrenda.Designer.cs">
+      <DependentUpon>AltaPrenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\ConsultaDatosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\ConsultaDatosForm.Designer.cs">
+      <DependentUpon>ConsultaDatosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\ConsultaPrenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\ConsultaPrenda.Designer.cs">
+      <DependentUpon>ConsultaPrenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\ConsultaTipoDocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\ConsultaTipoDocForm.Designer.cs">
+      <DependentUpon>ConsultaTipoDocForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\EliminarTransaccionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\EliminarTransaccionForm.Designer.cs">
+      <DependentUpon>EliminarTransaccionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\FinalizarVentaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\FinalizarVentaForm.Designer.cs">
+      <DependentUpon>FinalizarVentaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\ReporteEmpleadosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\ReporteEmpleadosForm.Designer.cs">
+      <DependentUpon>ReporteEmpleadosForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\ReporteTipoPrendaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\ReporteTipoPrendaForm.Designer.cs">
+      <DependentUpon>ReporteTipoPrendaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\ReporteVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\ReporteVentas.Designer.cs">
+      <DependentUpon>ReporteVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\TransaccionVentaContinuaciónForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\TransaccionVentaContinuaciónForm.Designer.cs">
+      <DependentUpon>TransaccionVentaContinuaciónForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\ModificaciónTipoDocForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\ModificaciónTipoDocForm.Designer.cs">
+      <DependentUpon>ModificaciónTipoDocForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\ModificarPrendasForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\ModificarPrendasForm.Designer.cs">
+      <DependentUpon>ModificarPrendasForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\ModificarTipoPrendaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\ModificarTipoPrendaForm.Designer.cs">
+      <DependentUpon>ModificarTipoPrendaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\TransaccionVentaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\TransaccionVentaForm.Designer.cs">
+      <DependentUpon>TransaccionVentaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\CopiaPrendaStock.cs" />
+    <Compile Include="Entidades\Parametro.cs" />
+    <Compile Include="Entidades\PrendaRopa.cs" />
+    <Compile Include="Entidades\TipoDoc.cs" />
+    <Compile Include="Entidades\Usuario.cs" />
+    <Compile Include="Capa de presentacion\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\ModificarUsuarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\ModificarUsuarioForm.Designer.cs">
+      <DependentUpon>ModificarUsuarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\PrincipalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\PrincipalForm.Designer.cs">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa de presentacion\ConsultaTipoPrendaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\ConsultaTipoPrendaForm.Designer.cs">
+      <DependentUpon>ConsultaTipoPrendaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Capa de presentacion\RegistrarUsuarioForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa de presentacion\RegistrarUsuarioForm.Designer.cs">
+      <DependentUpon>RegistrarUsuarioForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\TipoPrendaRopa.cs" />
+    <Compile Include="Reportes\DsEmpleadosVentas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsEmpleadosVentas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DsTipoPrenda.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsTipoPrenda.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DsVentasPorFechas.cs">
+      <DependentUpon>DsVentasPorFechas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DsVentasPorFechas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsVentasPorFechas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="Capa de presentacion\AltaTipoDocForm.resx">
+      <DependentUpon>AltaTipoDocForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\AltaTipoPrendaForm.resx">
+      <DependentUpon>AltaTipoPrendaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\AltaPrenda.resx">
+      <DependentUpon>AltaPrenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\ConsultaDatosForm.resx">
+      <DependentUpon>ConsultaDatosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\ConsultaPrenda.resx">
+      <DependentUpon>ConsultaPrenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\ConsultaTipoDocForm.resx">
+      <DependentUpon>ConsultaTipoDocForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\EliminarTransaccionForm.resx">
+      <DependentUpon>EliminarTransaccionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\FinalizarVentaForm.resx">
+      <DependentUpon>FinalizarVentaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\ReporteEmpleadosForm.resx">
+      <DependentUpon>ReporteEmpleadosForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\ReporteTipoPrendaForm.resx">
+      <DependentUpon>ReporteTipoPrendaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\ReporteVentas.resx">
+      <DependentUpon>ReporteVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\TransaccionVentaContinuaciónForm.resx">
+      <DependentUpon>TransaccionVentaContinuaciónForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\ModificaciónTipoDocForm.resx">
+      <DependentUpon>ModificaciónTipoDocForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\ModificarTipoPrendaForm.resx">
+      <DependentUpon>ModificarTipoPrendaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\ModificarUsuarioForm.resx">
+      <DependentUpon>ModificarUsuarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\PrincipalForm.resx">
+      <DependentUpon>PrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\ModificarPrendasForm.resx">
+      <DependentUpon>ModificarPrendasForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\ConsultaTipoPrendaForm.resx">
+      <DependentUpon>ConsultaTipoPrendaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa de presentacion\TransaccionVentaForm.resx">
+      <DependentUpon>TransaccionVentaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Capa de presentacion\RegistrarUsuarioForm.resx">
+      <DependentUpon>RegistrarUsuarioForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Reportes\rptEmpleadosPorVentas.rdlc" />
+    <EmbeddedResource Include="Reportes\rptTipoPrenda.rdlc" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Reportes\DsEmpleadosVentas.xsc">
+      <DependentUpon>DsEmpleadosVentas.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DsEmpleadosVentas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsEmpleadosVentas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DsEmpleadosVentas.xss">
+      <DependentUpon>DsEmpleadosVentas.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DsTipoPrenda.xsc">
+      <DependentUpon>DsTipoPrenda.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DsTipoPrenda.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsTipoPrenda.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DsTipoPrenda.xss">
+      <DependentUpon>DsTipoPrenda.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DsVentasPorFechas.xsc">
+      <DependentUpon>DsVentasPorFechas.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DsVentasPorFechas.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsVentasPorFechas.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DsVentasPorFechas.xss">
+      <DependentUpon>DsVentasPorFechas.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\5983647.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3643762_find_glass_magnifying_search_zoom_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\510861_find_magnifying glass_search_zoom_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1dd872a880f51000be547818ef190e75.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1dd872a880f51000be547818ef190e751.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono bonder.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono bonder1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo con dorado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back color para labels.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back color para labels1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compu mia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosita bebe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo para registrar1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuadrado dorado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horizontar registra.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa correcto.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horizontar registra1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\118589_user_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3430601_avatar_female_normal_woman_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\118589_user_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Percha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Percha1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bolsa de compras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user gris lindo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2180663_person_profile_user_user profile_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2180662_user_instagram_person_profile_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user negro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user gris lindo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\925901_account_avatar_people_profile_user_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3898372_user_people_man_add_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3898372_user_people_man_add_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3898372_user_people_man_add_icon %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3898372_user_people_man_add_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3898372_user_people_man_add_icon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user gris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\254225_account_human_person_profile_user_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4075949_buy_cart_ecommerce_shopping_trolley_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4075949_buy_cart_ecommerce_shopping_trolley_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7019498_buy_trolley_shop_ecommerce_add_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7019498_buy_trolley_shop_ecommerce_add_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7019498_buy_trolley_shop_ecommerce_add_icon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2527965_buy_cart_checkout_commerce_finance_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2527965_buy_cart_checkout_commerce_finance_icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2527965_buy_cart_checkout_commerce_finance_icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3898372_user_people_man_add_icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\211792_people_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Consulta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Modificación.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alta1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4362583_clothes_kid_toy_tshirt_icon %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4177628_group_people_team_workers_icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gris.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gris1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoPrincipalrecorte.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo rosa.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa oscurito.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rosa menos clarito.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo Transacción.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo transacción pintura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo transacción pintura1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo para todo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pintura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pintura1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1291737_document_file_notepad_report_survey_icon.png" />
+    <None Include="Resources\290137_clipboard_document_file_list_report_icon.png" />
+    <None Include="Resources\2931174_clipboard_copy_paste_analysis_report_icon.png" />
+    <None Include="Resources\blanco2.PNG" />
+    <None Include="Resources\370086_bin_delete_empty_out_recycle_icon.png" />
+    <None Include="Resources\370086_bin_delete_empty_out_recycle_icon1.png" />
+    <None Include="Resources\370086_bin_delete_empty_out_recycle_icon %281%29.png" />
+    <None Include="Resources\3844459_can_delete_remove_trash_icon.png" />
+    <None Include="Resources\8155532_delete_trash_remove_bin_garbage_icon.png" />
+    <None Include="Resources\8155532_delete_trash_remove_bin_garbage_icon %281%29.png" />
+    <None Include="Resources\370073_less_minus_remove_subtract_close_icon.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

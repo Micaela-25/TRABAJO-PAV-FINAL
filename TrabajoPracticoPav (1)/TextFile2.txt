@@ -1,0 +1,44 @@
+public static bool AltaNuevoCurso (ind idCurso, string nombreCurso, string DescripcionCurso, int idCarrera, List<int> listaIdsAlumnos)
+{
+	string cadenaConexion = System.Configuration.ConfigurationManager.AppSettings ["cadenaBD"];
+	SqlTransaction objTransaccion = null;
+	SqlConnection cn = new SqlConnection (cadenaConexion);
+	try
+	{
+		SqlCommand cmd = new SqlCommand ();
+		string consulta = "Insert into cursos values (@nombre, @descripcion, @idCarrera)";
+		cmd.Parameters.Clear();
+		cmd.Parameters.AddWithValue("@nombre", nombreCurso);
+		cmd.Parameters.AddWithValue("@descripcion", DescripcionCurso);
+		cmd.Parameters.AddWithValue("@idCarrera", idCarrera);
+		cmd.CommandType = CommandType.Text;
+		cmd.CommandText = consulta;
+		
+		cn.Open();
+		objTransaccion = cn.BeginTransaction ("AltaDeCurso");
+		cmd.Transaction = objTransaccion;
+		cmd.Connection = cn;
+		cmd.ExecuteNonQuery();
+
+		foreach(var idAlumno in listaIdsAlumnos)
+		{
+			string consultaCursoXAlumno =  "INSERT INTO personas_por_cursos values (@idPersona, @idCurso, @fecha)"
+			cmd.Parameters.AddWithValue("@idPersona", idAlumno);
+			cmd.Parameters.AddWithValue("@idCurso", idCurso);
+			cmd.Parameters.AddWithValue("@fecha", DateTime.Now);
+			cmd.Parameters.Clear();
+			cmd.CommandText = consultaCursoXAlumno;
+			cmd.ExecuteNonQuery();
+		}
+		objTransaccion.Commit();
+		return true;
+
+	}
+
+	catch (Exception ex)
+	{
+		objTransaccion.Rollback();
+		return false
+	}
+
+}
