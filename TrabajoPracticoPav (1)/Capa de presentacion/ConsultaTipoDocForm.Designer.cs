@@ -35,10 +35,6 @@ namespace TrabajoPractico.Capa_de_presentacion
             this.btnEliminarTipoDoc = new System.Windows.Forms.Button();
             this.btnVolverConsultaTipoDoc = new System.Windows.Forms.Button();
             this.gdrConsultaTipoDoc = new System.Windows.Forms.DataGridView();
-            this.Código = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripción = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Borrado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblNombreConsultaTipoDoc = new System.Windows.Forms.Label();
             this.txtDescripcionTipoDocConsulta = new System.Windows.Forms.TextBox();
             this.lblTituloConsultaTipoDoc = new System.Windows.Forms.Label();
@@ -48,6 +44,9 @@ namespace TrabajoPractico.Capa_de_presentacion
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombreTipoDocConsulta = new System.Windows.Forms.TextBox();
             this.chkBaja = new System.Windows.Forms.CheckBox();
+            this.Código = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripción = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grbConsultaTiposDoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gdrConsultaTipoDoc)).BeginInit();
             this.grpConsultaTiposDoc.SuspendLayout();
@@ -114,8 +113,7 @@ namespace TrabajoPractico.Capa_de_presentacion
             this.gdrConsultaTipoDoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Código,
             this.Nombre,
-            this.Descripción,
-            this.Borrado});
+            this.Descripción});
             this.gdrConsultaTipoDoc.Location = new System.Drawing.Point(6, 45);
             this.gdrConsultaTipoDoc.Name = "gdrConsultaTipoDoc";
             this.gdrConsultaTipoDoc.ReadOnly = true;
@@ -123,41 +121,6 @@ namespace TrabajoPractico.Capa_de_presentacion
             this.gdrConsultaTipoDoc.Size = new System.Drawing.Size(473, 176);
             this.gdrConsultaTipoDoc.TabIndex = 0;
             this.gdrConsultaTipoDoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdrConsultaTipoDoc_CellClick);
-            // 
-            // Código
-            // 
-            this.Código.DataPropertyName = "Id_Tipo_Doc";
-            this.Código.HeaderText = "Código";
-            this.Código.MinimumWidth = 6;
-            this.Código.Name = "Código";
-            this.Código.ReadOnly = true;
-            this.Código.Width = 58;
-            // 
-            // Nombre
-            // 
-            this.Nombre.DataPropertyName = "Nombre";
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.MinimumWidth = 6;
-            this.Nombre.Name = "Nombre";
-            this.Nombre.ReadOnly = true;
-            this.Nombre.Width = 150;
-            // 
-            // Descripción
-            // 
-            this.Descripción.DataPropertyName = "Descripción";
-            this.Descripción.HeaderText = "Descripción";
-            this.Descripción.MinimumWidth = 6;
-            this.Descripción.Name = "Descripción";
-            this.Descripción.ReadOnly = true;
-            this.Descripción.Width = 150;
-            // 
-            // Borrado
-            // 
-            this.Borrado.DataPropertyName = "Borrado";
-            this.Borrado.HeaderText = "Borrado";
-            this.Borrado.Name = "Borrado";
-            this.Borrado.ReadOnly = true;
-            this.Borrado.Width = 58;
             // 
             // lblNombreConsultaTipoDoc
             // 
@@ -270,6 +233,33 @@ namespace TrabajoPractico.Capa_de_presentacion
             this.chkBaja.Text = "Incluir tipos dados de baja";
             this.chkBaja.UseVisualStyleBackColor = true;
             // 
+            // Código
+            // 
+            this.Código.DataPropertyName = "Id_Tipo_Doc";
+            this.Código.HeaderText = "Código";
+            this.Código.MinimumWidth = 6;
+            this.Código.Name = "Código";
+            this.Código.ReadOnly = true;
+            this.Código.Width = 58;
+            // 
+            // Nombre
+            // 
+            this.Nombre.DataPropertyName = "Nombre";
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.MinimumWidth = 6;
+            this.Nombre.Name = "Nombre";
+            this.Nombre.ReadOnly = true;
+            this.Nombre.Width = 170;
+            // 
+            // Descripción
+            // 
+            this.Descripción.DataPropertyName = "Descripción";
+            this.Descripción.HeaderText = "Descripción";
+            this.Descripción.MinimumWidth = 6;
+            this.Descripción.Name = "Descripción";
+            this.Descripción.ReadOnly = true;
+            this.Descripción.Width = 200;
+            // 
             // ConsultaTipoDocForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,10 +299,9 @@ namespace TrabajoPractico.Capa_de_presentacion
         private System.Windows.Forms.CheckBox chkBaja;
         private System.Windows.Forms.TextBox txtNombreTipoDocConsulta;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Código;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripción;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Borrado;
-        private System.Windows.Forms.Label label1;
     }
 }

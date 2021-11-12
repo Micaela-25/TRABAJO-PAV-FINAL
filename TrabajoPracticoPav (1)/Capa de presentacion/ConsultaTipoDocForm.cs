@@ -123,7 +123,7 @@ namespace TrabajoPractico.Capa_de_presentacion
                     t.id, 
                     t.nombre,
                     t.descripcion,
-                    t.borrado,                 
+                    //t.borrado,                 
                     });
                 }
             }
