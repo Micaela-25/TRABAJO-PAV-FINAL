@@ -120,9 +120,9 @@ namespace TrabajoPractico
             this.lblRolNuevo.Image = global::TrabajoPractico.Properties.Resources.rosa_correcto;
             this.lblRolNuevo.Location = new System.Drawing.Point(6, 25);
             this.lblRolNuevo.Name = "lblRolNuevo";
-            this.lblRolNuevo.Size = new System.Drawing.Size(37, 20);
+            this.lblRolNuevo.Size = new System.Drawing.Size(47, 20);
             this.lblRolNuevo.TabIndex = 9;
-            this.lblRolNuevo.Text = "Rol:";
+            this.lblRolNuevo.Text = "* Rol:";
             // 
             // label1
             // 
@@ -193,9 +193,9 @@ namespace TrabajoPractico
             this.lblRepetirNuevaContra.Image = ((System.Drawing.Image)(resources.GetObject("lblRepetirNuevaContra.Image")));
             this.lblRepetirNuevaContra.Location = new System.Drawing.Point(59, 116);
             this.lblRepetirNuevaContra.Name = "lblRepetirNuevaContra";
-            this.lblRepetirNuevaContra.Size = new System.Drawing.Size(149, 20);
+            this.lblRepetirNuevaContra.Size = new System.Drawing.Size(159, 20);
             this.lblRepetirNuevaContra.TabIndex = 2;
-            this.lblRepetirNuevaContra.Text = "Repetir contraseña:";
+            this.lblRepetirNuevaContra.Text = "* Repetir contraseña:";
             // 
             // lblNuevaContraseña
             // 
@@ -205,9 +205,9 @@ namespace TrabajoPractico
             this.lblNuevaContraseña.Image = ((System.Drawing.Image)(resources.GetObject("lblNuevaContraseña.Image")));
             this.lblNuevaContraseña.Location = new System.Drawing.Point(107, 82);
             this.lblNuevaContraseña.Name = "lblNuevaContraseña";
-            this.lblNuevaContraseña.Size = new System.Drawing.Size(96, 20);
+            this.lblNuevaContraseña.Size = new System.Drawing.Size(106, 20);
             this.lblNuevaContraseña.TabIndex = 1;
-            this.lblNuevaContraseña.Text = "Contraseña:";
+            this.lblNuevaContraseña.Text = "* Contraseña:";
             // 
             // lblNombreNuevoUsu
             // 
@@ -217,9 +217,9 @@ namespace TrabajoPractico
             this.lblNombreNuevoUsu.Image = ((System.Drawing.Image)(resources.GetObject("lblNombreNuevoUsu.Image")));
             this.lblNombreNuevoUsu.Location = new System.Drawing.Point(57, 47);
             this.lblNombreNuevoUsu.Name = "lblNombreNuevoUsu";
-            this.lblNombreNuevoUsu.Size = new System.Drawing.Size(147, 20);
+            this.lblNombreNuevoUsu.Size = new System.Drawing.Size(157, 20);
             this.lblNombreNuevoUsu.TabIndex = 0;
-            this.lblNombreNuevoUsu.Text = "Nombre de usuario:";
+            this.lblNombreNuevoUsu.Text = "* Nombre de usuario:";
             // 
             // RegistrarUsuarioForm
             // 

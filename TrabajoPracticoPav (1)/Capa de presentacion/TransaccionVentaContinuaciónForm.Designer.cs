@@ -139,11 +139,11 @@ namespace TrabajoPractico.Capa_de_presentacion
             this.lblMailClieTran.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMailClieTran.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblMailClieTran.Image = ((System.Drawing.Image)(resources.GetObject("lblMailClieTran.Image")));
-            this.lblMailClieTran.Location = new System.Drawing.Point(361, 188);
+            this.lblMailClieTran.Location = new System.Drawing.Point(358, 188);
             this.lblMailClieTran.Name = "lblMailClieTran";
-            this.lblMailClieTran.Size = new System.Drawing.Size(142, 20);
+            this.lblMailClieTran.Size = new System.Drawing.Size(152, 20);
             this.lblMailClieTran.TabIndex = 7;
-            this.lblMailClieTran.Text = "Correo electrónico:";
+            this.lblMailClieTran.Text = "* Correo electrónico:";
             // 
             // lblNroTelClieTran
             // 
@@ -152,11 +152,11 @@ namespace TrabajoPractico.Capa_de_presentacion
             this.lblNroTelClieTran.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNroTelClieTran.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblNroTelClieTran.Image = ((System.Drawing.Image)(resources.GetObject("lblNroTelClieTran.Image")));
-            this.lblNroTelClieTran.Location = new System.Drawing.Point(24, 188);
+            this.lblNroTelClieTran.Location = new System.Drawing.Point(24, 192);
             this.lblNroTelClieTran.Name = "lblNroTelClieTran";
-            this.lblNroTelClieTran.Size = new System.Drawing.Size(126, 20);
+            this.lblNroTelClieTran.Size = new System.Drawing.Size(136, 20);
             this.lblNroTelClieTran.TabIndex = 6;
-            this.lblNroTelClieTran.Text = "Nro. de teléfono:";
+            this.lblNroTelClieTran.Text = "* Nro. de teléfono:";
             // 
             // lblNombreClienteTran
             // 
@@ -165,11 +165,11 @@ namespace TrabajoPractico.Capa_de_presentacion
             this.lblNombreClienteTran.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreClienteTran.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblNombreClienteTran.Image = ((System.Drawing.Image)(resources.GetObject("lblNombreClienteTran.Image")));
-            this.lblNombreClienteTran.Location = new System.Drawing.Point(81, 110);
+            this.lblNombreClienteTran.Location = new System.Drawing.Point(81, 109);
             this.lblNombreClienteTran.Name = "lblNombreClienteTran";
-            this.lblNombreClienteTran.Size = new System.Drawing.Size(69, 20);
+            this.lblNombreClienteTran.Size = new System.Drawing.Size(79, 20);
             this.lblNombreClienteTran.TabIndex = 5;
-            this.lblNombreClienteTran.Text = "Nombre:";
+            this.lblNombreClienteTran.Text = "* Nombre:";
             // 
             // lblApellidoClienTran
             // 
@@ -180,9 +180,9 @@ namespace TrabajoPractico.Capa_de_presentacion
             this.lblApellidoClienTran.Image = ((System.Drawing.Image)(resources.GetObject("lblApellidoClienTran.Image")));
             this.lblApellidoClienTran.Location = new System.Drawing.Point(81, 150);
             this.lblApellidoClienTran.Name = "lblApellidoClienTran";
-            this.lblApellidoClienTran.Size = new System.Drawing.Size(69, 20);
+            this.lblApellidoClienTran.Size = new System.Drawing.Size(79, 20);
             this.lblApellidoClienTran.TabIndex = 4;
-            this.lblApellidoClienTran.Text = "Apellido:";
+            this.lblApellidoClienTran.Text = "* Apellido:";
             // 
             // lblTipoDocClienteTran
             // 
@@ -193,9 +193,9 @@ namespace TrabajoPractico.Capa_de_presentacion
             this.lblTipoDocClienteTran.Image = ((System.Drawing.Image)(resources.GetObject("lblTipoDocClienteTran.Image")));
             this.lblTipoDocClienteTran.Location = new System.Drawing.Point(351, 110);
             this.lblTipoDocClienteTran.Name = "lblTipoDocClienteTran";
-            this.lblTipoDocClienteTran.Size = new System.Drawing.Size(149, 20);
+            this.lblTipoDocClienteTran.Size = new System.Drawing.Size(159, 20);
             this.lblTipoDocClienteTran.TabIndex = 3;
-            this.lblTipoDocClienteTran.Text = "Tipo de documento:";
+            this.lblTipoDocClienteTran.Text = "* Tipo de documento:";
             // 
             // lblNroDocClieTran
             // 
@@ -206,9 +206,9 @@ namespace TrabajoPractico.Capa_de_presentacion
             this.lblNroDocClieTran.Image = ((System.Drawing.Image)(resources.GetObject("lblNroDocClieTran.Image")));
             this.lblNroDocClieTran.Location = new System.Drawing.Point(351, 150);
             this.lblNroDocClieTran.Name = "lblNroDocClieTran";
-            this.lblNroDocClieTran.Size = new System.Drawing.Size(148, 20);
+            this.lblNroDocClieTran.Size = new System.Drawing.Size(158, 20);
             this.lblNroDocClieTran.TabIndex = 2;
-            this.lblNroDocClieTran.Text = "Nro. de documento:";
+            this.lblNroDocClieTran.Text = "* Nro. de documento:";
             // 
             // txtDocFiltroCliente
             // 
@@ -227,9 +227,9 @@ namespace TrabajoPractico.Capa_de_presentacion
             this.lblDocFiltroCliente.Image = ((System.Drawing.Image)(resources.GetObject("lblDocFiltroCliente.Image")));
             this.lblDocFiltroCliente.Location = new System.Drawing.Point(16, 64);
             this.lblDocFiltroCliente.Name = "lblDocFiltroCliente";
-            this.lblDocFiltroCliente.Size = new System.Drawing.Size(231, 20);
+            this.lblDocFiltroCliente.Size = new System.Drawing.Size(241, 20);
             this.lblDocFiltroCliente.TabIndex = 0;
-            this.lblDocFiltroCliente.Text = "Ingresar documento del cliente:";
+            this.lblDocFiltroCliente.Text = "* Ingresar documento del cliente:";
             // 
             // btnContinuarVentaFinal
             // 
@@ -250,7 +250,7 @@ namespace TrabajoPractico.Capa_de_presentacion
             this.cmbFormaDePago.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbFormaDePago.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.cmbFormaDePago.FormattingEnabled = true;
-            this.cmbFormaDePago.Location = new System.Drawing.Point(143, 345);
+            this.cmbFormaDePago.Location = new System.Drawing.Point(153, 345);
             this.cmbFormaDePago.Name = "cmbFormaDePago";
             this.cmbFormaDePago.Size = new System.Drawing.Size(132, 24);
             this.cmbFormaDePago.TabIndex = 9;
@@ -264,9 +264,9 @@ namespace TrabajoPractico.Capa_de_presentacion
             this.lblFormaPago.Image = ((System.Drawing.Image)(resources.GetObject("lblFormaPago.Image")));
             this.lblFormaPago.Location = new System.Drawing.Point(16, 345);
             this.lblFormaPago.Name = "lblFormaPago";
-            this.lblFormaPago.Size = new System.Drawing.Size(121, 20);
+            this.lblFormaPago.Size = new System.Drawing.Size(131, 20);
             this.lblFormaPago.TabIndex = 17;
-            this.lblFormaPago.Text = "Forma de pago:";
+            this.lblFormaPago.Text = "* Forma de pago:";
             // 
             // lblBusquedaVenta
             // 

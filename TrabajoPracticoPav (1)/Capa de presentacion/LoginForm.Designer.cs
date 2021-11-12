@@ -65,11 +65,11 @@ namespace TrabajoPractico
             this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblPassword.Image = ((System.Drawing.Image)(resources.GetObject("lblPassword.Image")));
-            this.lblPassword.Location = new System.Drawing.Point(87, 92);
+            this.lblPassword.Location = new System.Drawing.Point(77, 95);
             this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(89, 18);
+            this.lblPassword.Size = new System.Drawing.Size(99, 18);
             this.lblPassword.TabIndex = 1;
-            this.lblPassword.Text = "Contraseña:";
+            this.lblPassword.Text = "* Contraseña:";
             // 
             // lblUsuario
             // 
@@ -78,11 +78,11 @@ namespace TrabajoPractico
             this.lblUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.lblUsuario.Image = ((System.Drawing.Image)(resources.GetObject("lblUsuario.Image")));
-            this.lblUsuario.Location = new System.Drawing.Point(34, 63);
+            this.lblUsuario.Location = new System.Drawing.Point(24, 65);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(142, 18);
+            this.lblUsuario.Size = new System.Drawing.Size(152, 18);
             this.lblUsuario.TabIndex = 2;
-            this.lblUsuario.Text = "Nombre de Usuario:";
+            this.lblUsuario.Text = "* Nombre de Usuario:";
             // 
             // txtNombreUsuario
             // 

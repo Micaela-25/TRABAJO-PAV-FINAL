@@ -61,6 +61,7 @@ namespace TrabajoPractico
             this.lblBonder = new System.Windows.Forms.Label();
             this.lblBienvenidousu = new System.Windows.Forms.Label();
             this.lblBienvenido = new System.Windows.Forms.Label();
+            this.agregarClientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -111,7 +112,7 @@ namespace TrabajoPractico
             this.misDatosToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.misDatosToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources.Consulta;
             this.misDatosToolStripMenuItem.Name = "misDatosToolStripMenuItem";
-            this.misDatosToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
+            this.misDatosToolStripMenuItem.Size = new System.Drawing.Size(214, 30);
             this.misDatosToolStripMenuItem.Text = "Mis datos";
             this.misDatosToolStripMenuItem.Click += new System.EventHandler(this.misDatosToolStripMenuItem_Click);
             // 
@@ -120,7 +121,7 @@ namespace TrabajoPractico
             this.modificarDatosToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.modificarDatosToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources.Modificación;
             this.modificarDatosToolStripMenuItem.Name = "modificarDatosToolStripMenuItem";
-            this.modificarDatosToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
+            this.modificarDatosToolStripMenuItem.Size = new System.Drawing.Size(214, 30);
             this.modificarDatosToolStripMenuItem.Text = "Modificar datos";
             this.modificarDatosToolStripMenuItem.Click += new System.EventHandler(this.modificarDatosToolStripMenuItem_Click);
             // 
@@ -129,7 +130,7 @@ namespace TrabajoPractico
             this.cerrarSesionToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.cerrarSesionToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources.Alta1;
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(210, 30);
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(214, 30);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
             this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
             // 
@@ -138,7 +139,8 @@ namespace TrabajoPractico
             this.clientesToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosa_oscurito;
             this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nuestrosClientesToolStripMenuItem,
-            this.ventasToolStripMenuItem});
+            this.ventasToolStripMenuItem,
+            this.agregarClientesToolStripMenuItem});
             this.clientesToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Italic);
             this.clientesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.clientesToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources._211792_people_icon;
@@ -152,15 +154,16 @@ namespace TrabajoPractico
             this.nuestrosClientesToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.nuestrosClientesToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources.Consulta;
             this.nuestrosClientesToolStripMenuItem.Name = "nuestrosClientesToolStripMenuItem";
-            this.nuestrosClientesToolStripMenuItem.Size = new System.Drawing.Size(223, 30);
+            this.nuestrosClientesToolStripMenuItem.Size = new System.Drawing.Size(231, 30);
             this.nuestrosClientesToolStripMenuItem.Text = "Nuestros clientes";
             // 
             // ventasToolStripMenuItem
             // 
             this.ventasToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
+            this.ventasToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources.Modificación;
             this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
-            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(223, 30);
-            this.ventasToolStripMenuItem.Text = "Ventas";
+            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(231, 30);
+            this.ventasToolStripMenuItem.Text = "Modificar clientes";
             // 
             // prendasToolStripMenuItem
             // 
@@ -182,7 +185,7 @@ namespace TrabajoPractico
             this.ConsultaPrendasPrinc.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.ConsultaPrendasPrinc.Image = global::TrabajoPractico.Properties.Resources.Consulta;
             this.ConsultaPrendasPrinc.Name = "ConsultaPrendasPrinc";
-            this.ConsultaPrendasPrinc.Size = new System.Drawing.Size(223, 30);
+            this.ConsultaPrendasPrinc.Size = new System.Drawing.Size(227, 30);
             this.ConsultaPrendasPrinc.Text = "Ver prendas";
             this.ConsultaPrendasPrinc.Click += new System.EventHandler(this.ConsultaPrendasPrinc_Click);
             // 
@@ -191,7 +194,7 @@ namespace TrabajoPractico
             this.AgregarPrendasPrincp.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.AgregarPrendasPrincp.Image = global::TrabajoPractico.Properties.Resources.Alta;
             this.AgregarPrendasPrincp.Name = "AgregarPrendasPrincp";
-            this.AgregarPrendasPrincp.Size = new System.Drawing.Size(223, 30);
+            this.AgregarPrendasPrincp.Size = new System.Drawing.Size(227, 30);
             this.AgregarPrendasPrincp.Text = "Agregar prenda";
             this.AgregarPrendasPrincp.Click += new System.EventHandler(this.AgregarPrendasPrincp_Click);
             // 
@@ -200,7 +203,7 @@ namespace TrabajoPractico
             this.modificarPrendaPrinc.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.modificarPrendaPrinc.Image = global::TrabajoPractico.Properties.Resources.Modificación;
             this.modificarPrendaPrinc.Name = "modificarPrendaPrinc";
-            this.modificarPrendaPrinc.Size = new System.Drawing.Size(223, 30);
+            this.modificarPrendaPrinc.Size = new System.Drawing.Size(227, 30);
             this.modificarPrendaPrinc.Text = "Modificar prenda";
             this.modificarPrendaPrinc.Click += new System.EventHandler(this.modificarPrendaPrinc_Click);
             // 
@@ -224,7 +227,7 @@ namespace TrabajoPractico
             this.agregarTipoToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.agregarTipoToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources.Alta1;
             this.agregarTipoToolStripMenuItem.Name = "agregarTipoToolStripMenuItem";
-            this.agregarTipoToolStripMenuItem.Size = new System.Drawing.Size(205, 30);
+            this.agregarTipoToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
             this.agregarTipoToolStripMenuItem.Text = "Agregar Tipo";
             this.agregarTipoToolStripMenuItem.Click += new System.EventHandler(this.agregarTipoToolStripMenuItem_Click);
             // 
@@ -233,7 +236,7 @@ namespace TrabajoPractico
             this.verTiposToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.verTiposToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources.Consulta;
             this.verTiposToolStripMenuItem.Name = "verTiposToolStripMenuItem";
-            this.verTiposToolStripMenuItem.Size = new System.Drawing.Size(205, 30);
+            this.verTiposToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
             this.verTiposToolStripMenuItem.Text = "Ver tipos";
             this.verTiposToolStripMenuItem.Click += new System.EventHandler(this.verTiposToolStripMenuItem_Click);
             // 
@@ -242,7 +245,7 @@ namespace TrabajoPractico
             this.modificarTiposToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.modificarTiposToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources.Modificación;
             this.modificarTiposToolStripMenuItem.Name = "modificarTiposToolStripMenuItem";
-            this.modificarTiposToolStripMenuItem.Size = new System.Drawing.Size(205, 30);
+            this.modificarTiposToolStripMenuItem.Size = new System.Drawing.Size(209, 30);
             this.modificarTiposToolStripMenuItem.Text = "Modificar tipos";
             this.modificarTiposToolStripMenuItem.Click += new System.EventHandler(this.modificarTiposToolStripMenuItem_Click);
             // 
@@ -267,7 +270,7 @@ namespace TrabajoPractico
             this.agregarMarcaToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.agregarMarcaToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources.Alta;
             this.agregarMarcaToolStripMenuItem.Name = "agregarMarcaToolStripMenuItem";
-            this.agregarMarcaToolStripMenuItem.Size = new System.Drawing.Size(317, 30);
+            this.agregarMarcaToolStripMenuItem.Size = new System.Drawing.Size(321, 30);
             this.agregarMarcaToolStripMenuItem.Text = "Agregar tipo documento";
             this.agregarMarcaToolStripMenuItem.Click += new System.EventHandler(this.agregarMarcaToolStripMenuItem_Click);
             // 
@@ -276,8 +279,8 @@ namespace TrabajoPractico
             this.verMarcaToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.verMarcaToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources.Consulta;
             this.verMarcaToolStripMenuItem.Name = "verMarcaToolStripMenuItem";
-            this.verMarcaToolStripMenuItem.Size = new System.Drawing.Size(317, 30);
-            this.verMarcaToolStripMenuItem.Text = "Ver tipo de documento";
+            this.verMarcaToolStripMenuItem.Size = new System.Drawing.Size(321, 30);
+            this.verMarcaToolStripMenuItem.Text = "Ver tipos de documento";
             this.verMarcaToolStripMenuItem.Click += new System.EventHandler(this.verMarcaToolStripMenuItem_Click);
             // 
             // modificarMarcaToolStripMenuItem
@@ -285,7 +288,7 @@ namespace TrabajoPractico
             this.modificarMarcaToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.modificarMarcaToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources.Modificación;
             this.modificarMarcaToolStripMenuItem.Name = "modificarMarcaToolStripMenuItem";
-            this.modificarMarcaToolStripMenuItem.Size = new System.Drawing.Size(317, 30);
+            this.modificarMarcaToolStripMenuItem.Size = new System.Drawing.Size(321, 30);
             this.modificarMarcaToolStripMenuItem.Text = "Modificar tipo de documento";
             this.modificarMarcaToolStripMenuItem.Click += new System.EventHandler(this.modificarMarcaToolStripMenuItem_Click);
             // 
@@ -307,7 +310,7 @@ namespace TrabajoPractico
             this.nuevaToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.nuevaToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources.Alta;
             this.nuevaToolStripMenuItem.Name = "nuevaToolStripMenuItem";
-            this.nuevaToolStripMenuItem.Size = new System.Drawing.Size(194, 30);
+            this.nuevaToolStripMenuItem.Size = new System.Drawing.Size(190, 30);
             this.nuevaToolStripMenuItem.Text = "Nueva venta";
             this.nuevaToolStripMenuItem.Click += new System.EventHandler(this.nuevaToolStripMenuItem_Click);
             // 
@@ -316,7 +319,7 @@ namespace TrabajoPractico
             this.eliminarToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.eliminarToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources._370073_less_minus_remove_subtract_close_icon;
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(194, 30);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(190, 30);
             this.eliminarToolStripMenuItem.Text = "Anular venta";
             this.eliminarToolStripMenuItem.Click += new System.EventHandler(this.eliminarToolStripMenuItem_Click);
             // 
@@ -340,7 +343,7 @@ namespace TrabajoPractico
             this.listadoDePrendasMasVendidasToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.listadoDePrendasMasVendidasToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources._1291737_document_file_notepad_report_survey_icon;
             this.listadoDePrendasMasVendidasToolStripMenuItem.Name = "listadoDePrendasMasVendidasToolStripMenuItem";
-            this.listadoDePrendasMasVendidasToolStripMenuItem.Size = new System.Drawing.Size(353, 30);
+            this.listadoDePrendasMasVendidasToolStripMenuItem.Size = new System.Drawing.Size(357, 30);
             this.listadoDePrendasMasVendidasToolStripMenuItem.Text = "Listado de Prendas mas vendidas";
             this.listadoDePrendasMasVendidasToolStripMenuItem.Click += new System.EventHandler(this.listadoDePrendasMasVendidasToolStripMenuItem_Click);
             // 
@@ -349,7 +352,7 @@ namespace TrabajoPractico
             this.listadoDeVentasPorEmpleadosToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.listadoDeVentasPorEmpleadosToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources._1291737_document_file_notepad_report_survey_icon;
             this.listadoDeVentasPorEmpleadosToolStripMenuItem.Name = "listadoDeVentasPorEmpleadosToolStripMenuItem";
-            this.listadoDeVentasPorEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(353, 30);
+            this.listadoDeVentasPorEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(357, 30);
             this.listadoDeVentasPorEmpleadosToolStripMenuItem.Text = "Listado de ventas por empleados";
             this.listadoDeVentasPorEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.listadoDeVentasPorEmpleadosToolStripMenuItem_Click);
             // 
@@ -358,7 +361,7 @@ namespace TrabajoPractico
             this.listadoDeVentasPorFechasToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
             this.listadoDeVentasPorFechasToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources._1291737_document_file_notepad_report_survey_icon;
             this.listadoDeVentasPorFechasToolStripMenuItem.Name = "listadoDeVentasPorFechasToolStripMenuItem";
-            this.listadoDeVentasPorFechasToolStripMenuItem.Size = new System.Drawing.Size(353, 30);
+            this.listadoDeVentasPorFechasToolStripMenuItem.Size = new System.Drawing.Size(357, 30);
             this.listadoDeVentasPorFechasToolStripMenuItem.Text = "Listado de ventas por fechas";
             this.listadoDeVentasPorFechasToolStripMenuItem.Click += new System.EventHandler(this.listadoDeVentasPorFechasToolStripMenuItem_Click);
             // 
@@ -420,6 +423,14 @@ namespace TrabajoPractico
             this.lblBienvenido.Size = new System.Drawing.Size(0, 13);
             this.lblBienvenido.TabIndex = 0;
             // 
+            // agregarClientesToolStripMenuItem
+            // 
+            this.agregarClientesToolStripMenuItem.BackgroundImage = global::TrabajoPractico.Properties.Resources.rosita_bebe;
+            this.agregarClientesToolStripMenuItem.Image = global::TrabajoPractico.Properties.Resources.Alta;
+            this.agregarClientesToolStripMenuItem.Name = "agregarClientesToolStripMenuItem";
+            this.agregarClientesToolStripMenuItem.Size = new System.Drawing.Size(231, 30);
+            this.agregarClientesToolStripMenuItem.Text = "Agregar clientes";
+            // 
             // PrincipalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -478,5 +489,6 @@ namespace TrabajoPractico
         private System.Windows.Forms.ToolStripMenuItem listadoDeVentasPorEmpleadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem listadoDeVentasPorFechasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem agregarClientesToolStripMenuItem;
     }
 }

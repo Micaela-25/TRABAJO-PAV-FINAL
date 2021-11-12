@@ -34,7 +34,7 @@ namespace TrabajoPractico
             // Verificamos el ingreso de los datos de forma correcta
             if (txtNombreUsuario.Text.Equals("") || txtPassword.Text.Equals(""))
             {   //Si alguno de los dos datos no se completa
-                MessageBox.Show("Ingrese nombre de usuario y password", "Intento Fallido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Ingrese nombre de usuario y contraseña", "Intento Fallido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 LimpiarCampos();
                 txtNombreUsuario.Focus(); 
             }

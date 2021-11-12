@@ -30,10 +30,10 @@ namespace TrabajoPractico
         private void InitializeComponent()
         {
             this.grbBoxGrillaPrenda = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnVolverConsultaPrenda = new System.Windows.Forms.Button();
             this.btnEliminarPrenda = new System.Windows.Forms.Button();
             this.gdrConsultaPrenda = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CodigoPrenda = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripción = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,17 +57,29 @@ namespace TrabajoPractico
             this.grbBoxGrillaPrenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbBoxGrillaPrenda.Location = new System.Drawing.Point(122, 50);
             this.grbBoxGrillaPrenda.Name = "grbBoxGrillaPrenda";
-            this.grbBoxGrillaPrenda.Size = new System.Drawing.Size(1120, 256);
+            this.grbBoxGrillaPrenda.Size = new System.Drawing.Size(1120, 354);
             this.grbBoxGrillaPrenda.TabIndex = 0;
             this.grbBoxGrillaPrenda.TabStop = false;
             this.grbBoxGrillaPrenda.Text = "";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Image = global::TrabajoPractico.Properties.Resources.rosa_correcto;
+            this.label1.Location = new System.Drawing.Point(11, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(184, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Datos de Prendas";
             // 
             // btnVolverConsultaPrenda
             // 
             this.btnVolverConsultaPrenda.BackColor = System.Drawing.Color.White;
             this.btnVolverConsultaPrenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolverConsultaPrenda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnVolverConsultaPrenda.Location = new System.Drawing.Point(16, 203);
+            this.btnVolverConsultaPrenda.Location = new System.Drawing.Point(16, 307);
             this.btnVolverConsultaPrenda.Name = "btnVolverConsultaPrenda";
             this.btnVolverConsultaPrenda.Size = new System.Drawing.Size(115, 41);
             this.btnVolverConsultaPrenda.TabIndex = 2;
@@ -80,7 +92,7 @@ namespace TrabajoPractico
             this.btnEliminarPrenda.BackColor = System.Drawing.Color.White;
             this.btnEliminarPrenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarPrenda.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnEliminarPrenda.Location = new System.Drawing.Point(1007, 203);
+            this.btnEliminarPrenda.Location = new System.Drawing.Point(1007, 307);
             this.btnEliminarPrenda.Name = "btnEliminarPrenda";
             this.btnEliminarPrenda.Size = new System.Drawing.Size(107, 41);
             this.btnEliminarPrenda.TabIndex = 1;
@@ -107,21 +119,9 @@ namespace TrabajoPractico
             this.gdrConsultaPrenda.Name = "gdrConsultaPrenda";
             this.gdrConsultaPrenda.ReadOnly = true;
             this.gdrConsultaPrenda.RowHeadersWidth = 51;
-            this.gdrConsultaPrenda.Size = new System.Drawing.Size(1098, 150);
+            this.gdrConsultaPrenda.Size = new System.Drawing.Size(1098, 254);
             this.gdrConsultaPrenda.TabIndex = 0;
             this.gdrConsultaPrenda.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdrConsultaPrenda_CellClick);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Image = global::TrabajoPractico.Properties.Resources.rosa_correcto;
-            this.label1.Location = new System.Drawing.Point(11, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 25);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Datos de Prendas";
             // 
             // Nombre
             // 
@@ -209,7 +209,7 @@ namespace TrabajoPractico
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::TrabajoPractico.Properties.Resources.horizontar_registra1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1342, 347);
+            this.ClientSize = new System.Drawing.Size(1342, 454);
             this.Controls.Add(this.grbBoxGrillaPrenda);
             this.Name = "ConsultaPrenda";
             this.ShowIcon = false;
