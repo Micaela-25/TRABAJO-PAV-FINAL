@@ -1452,7 +1452,7 @@ namespace TrabajoPractico.Base_de_datos
 
              ////--------------------------INSERT DE VENTA--------------------------------------------------------
                 SqlCommand cmd3 = new SqlCommand();
-                string consulta3 = " INSERT INTO Ventas (Id_usuario, Fecha, Total, Id_cliente, Id_Forma_Pago, Borrado) VALUES(@IdUsu, @fech, @Tot, @id_client, @id_forma_pago, 0) ";
+                string consulta3 = " INSERT INTO Ventas (Id_usuario, Fecha, Total, Id_cliente, Id_Forma_Pago, Anulado) VALUES(@IdUsu, @fech, @Tot, @id_client, @id_forma_pago, 0) ";
                 cmd3.Parameters.Clear();
                 cmd3.Parameters.AddWithValue("@IdUsu", idUsuario);
                 cmd3.Parameters.AddWithValue("@fech", fecha);
